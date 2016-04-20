@@ -1,27 +1,38 @@
-# Laravel PHP Framework
+# Instagram OAuth 2.0 Example
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+## Set Up
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+``` bash
+git clone https://github.com/ramsey/oauth2-phparch.git
+cd oauth2-phparch/
+cp .env.example .env
+```
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+Go to <https://instagram.com/> to create an Instagram account and then to <https://instagram.com/developer/clients/register/> to sign up as a developer and register an Instagram client. One of your “Valid redirect URIs” must be the value `http://localhost:8000/instagram`.
 
-## Official Documentation
+Edit .env and modify the following values, according to the ones received from Instagram:
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+```
+INSTAGRAM_CLIENT_ID=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+INSTAGRAM_CLIENT_SECRET=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+```
 
-## Contributing
+## Run the Application
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+After setting everything up, run the application:
 
-## Security Vulnerabilities
+``` bash
+php -S localhost:8000 server.php
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+Then, in your web browser, go to <http://localhost:8000/register> and register for an account. Afterwards, go to <http://localhost:8000/home> and click the “Click here to authorize with Instagram” link. This will walk you through the Instagram OAuth 2.0 flow.
 
-## License
+## How It Works
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+To see how it works, take a look at the source code in app/Http/Controllers/HomeController.php and resources/views/home.blade.php.
+
+Also, refer to the following projects:
+
+* [league/oauth2-client](https://github.com/thephpleague/oauth2-client)
+* [league/oauth2-instagram](https://github.com/thephpleague/oauth2-instagram)
+* [ramsey/laravel-oauth2-instagram](https://github.com/ramsey/laravel-oauth2-instagram)
