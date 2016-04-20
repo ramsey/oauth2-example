@@ -5,7 +5,11 @@
 ``` bash
 git clone https://github.com/ramsey/oauth2-phparch.git
 cd oauth2-phparch/
+composer install
+touch database/database.sqlite
 cp .env.example .env
+php artisan key:generate
+php artisan migrate
 ```
 
 Go to <https://instagram.com/> to create an Instagram account and then to <https://instagram.com/developer/clients/register/> to sign up as a developer and register an Instagram client. One of your “Valid redirect URIs” must be the value `http://localhost:8000/instagram`.
