@@ -25,7 +25,7 @@ class HomeController extends Controller
 
             $feedRequest = Instagram::getAuthenticatedRequest(
                 'GET',
-                'https://api.instagram.com/v1/users/self/feed',
+                'https://api.instagram.com/v1/users/self/media/recent',
                 $instagramToken
             );
 
