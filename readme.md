@@ -10,7 +10,7 @@ To run this application, open your favorite console application and run the foll
 
 ``` bash
 git clone https://github.com/ramsey/oauth2-example.git
-cd oauth2-phparch/
+cd oauth2-example/
 git checkout tnphp16
 composer install
 cp .env.example .env
