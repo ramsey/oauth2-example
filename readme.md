@@ -1,6 +1,6 @@
 # Mastering OAuth 2.0 Example Application
 
-This is the full source code for the example application used in the "Mastering OAuth 2.0" [talk at True North PHP 2016](https://benramsey.com/talks/2016/11/tnphp-oauth2/).
+This is the full source code for the example application used in the "Mastering OAuth 2.0" article in iMasters [insert issue or month number for publication and link to publication].
 
 This is a [Laravel](https://laravel.com/) application that uses [Instagram](https://www.instagram.com/) to illustrate [OAuth 2.0](http://oauth.net/2/) concepts.
 
@@ -41,7 +41,7 @@ Then, in your web browser, go to <http://localhost:8000/register> and register f
 
 ## How It Works
 
-Check out "Mastering OAuth 2.0" in the [May 2016 issue](https://www.phparch.com/magazine/2016-2/may/) of [php\[architect\] magazine](https://www.phparch.com/) for more details on OAuth 2.0 and this example application. I also recommend reading Matthew Frost's [_Integrating Web Services with OAuth and PHP_](https://www.phparch.com/books/integrating-web-services-with-oauth-and-php/).
+Check out "Mastering OAuth 2.0" in iMasters [insert issue or month number for publication and link to publication] for more details on OAuth 2.0 and this example application.
 
 The most important files in this application to review as examples are `app/Http/Controllers/HomeController.php` and `resources/views/home.blade.php`.
 
