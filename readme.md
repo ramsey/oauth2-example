@@ -1,6 +1,6 @@
 # Mastering OAuth 2.0 Example Application
 
-This is the full source code for the example application used in the ["Dominando OAuth 2.0" (Portuguese translation) article on iMasters](http://imasters.com.br/infra/seguranca/dominando-oauth-2-0/), December 9, 2016.
+This is the full source code for the example application used in the "Mastering OAuth 2.0" talk at the [AtlantaPHP April 2017 Meeting](http://atlantaphp.org/april-2017-meeting/).
 
 This is a [Laravel](https://laravel.com/) application that uses [Instagram](https://www.instagram.com/) to illustrate [OAuth 2.0](http://oauth.net/2/) concepts.
 
@@ -11,7 +11,7 @@ To run this application, open your favorite console application and run the foll
 ``` bash
 git clone https://github.com/ramsey/oauth2-example.git
 cd oauth2-example/
-git checkout imasters
+git checkout atlphp17
 composer install
 cp .env.example .env
 touch database/database.sqlite
@@ -41,7 +41,7 @@ Then, in your web browser, go to <http://localhost:8000/register> and register f
 
 ## How It Works
 
-Check out ["Dominando OAuth 2.0" (Portuguese translation) on iMasters](http://imasters.com.br/infra/seguranca/dominando-oauth-2-0/) for more details on OAuth 2.0 and this example application.
+Check out the "Mastering OAuth 2.0" chapter in _[Web Security 2016](https://www.phparch.com/books/web-security-2016/)_ from [php\[architect\] magazine](https://www.phparch.com/) for more details on OAuth 2.0 and this example application. I also recommend reading Matthew Frost's [_Integrating Web Services with OAuth and PHP_](https://www.phparch.com/books/integrating-web-services-with-oauth-and-php/).
 
 The most important files in this application to review as examples are `app/Http/Controllers/HomeController.php` and `resources/views/home.blade.php`.
 
