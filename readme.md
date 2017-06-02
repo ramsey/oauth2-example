@@ -1,6 +1,6 @@
 # Mastering OAuth 2.0 Example Application
 
-This is the full source code for the example application used in the "Mastering OAuth 2.0" talk at the [AtlantaPHP April 2017 Meeting](http://atlantaphp.org/april-2017-meeting/).
+This is the full source code for the example application used in the "Mastering OAuth 2.0" talk for [Day Camp 4 Developers: PHPAppSec](https://daycamp4developers.com/previous-meetings/phpappsec/).
 
 This is a [Laravel](https://laravel.com/) application that uses [Instagram](https://www.instagram.com/) to illustrate [OAuth 2.0](http://oauth.net/2/) concepts.
 
@@ -11,7 +11,7 @@ To run this application, open your favorite console application and run the foll
 ``` bash
 git clone https://github.com/ramsey/oauth2-example.git
 cd oauth2-example/
-git checkout atlphp17
+git checkout dc4d
 composer install
 cp .env.example .env
 touch database/database.sqlite
